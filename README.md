@@ -14,6 +14,6 @@ Dự án Machine Learning dự đoán giá nhà dựa trên các đặc trưng n
   - Huấn luyện mô hình
   - Đánh giá bằng MSE
 
-Biểu đồ so sánh giá nhà thực tế và dự đoán
+## Biểu đồ so sánh giá nhà thực tế và dự đoán
 ![](result.png)
 
