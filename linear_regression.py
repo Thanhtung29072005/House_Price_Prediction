@@ -54,9 +54,10 @@ if __name__=='__main__':
     y_pred=predict(X_test,w,b)
     mse=mean_squared_error(y_test,y_pred)
     print("Test MSE: ",mse)
-    plt.scatter(X_test[:,0],y_test,color='blue',label="Giá thật")
-    plt.scatter(X_test[:,0],y_pred,color='red',label="Giá dự đoán")
-    plt.xlabel("Area")
+    area_test_real=X_test[:,0]*std[0]+mean[0]
+    plt.scatter(area_test_real,y_test,color='blue',label="Giá thật")
+    plt.scatter(area_test_real,y_pred,color='red',label="Giá dự đoán")
+    plt.xlabel("Area(m2)")
     plt.ylabel("Price")
     plt.legend()
     plt.show()
