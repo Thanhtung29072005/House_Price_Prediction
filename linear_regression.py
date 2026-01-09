@@ -60,6 +60,7 @@ if __name__=='__main__':
     plt.xlabel("Area(m2)")
     plt.ylabel("Price")
     plt.legend()
+    plt.savefig("result.png", dpi=300, bbox_inches="tight")
     plt.show()
 
 
